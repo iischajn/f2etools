@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Site Properities -->
+    <title>前端开发工具</title>
+    <link rel="stylesheet" type="text/css" href="./static/semantic.css">
+    <link rel="stylesheet" type="text/css" href="./static/index.css">
+</head>
+
+<body id="main">
+    <div id="sidebar" class="ui large inverted vertical sidebar menu">
+        <a class="item" data-tab="beautify"> HTML/JS/CSS美化</a>
+        <a class="item active" data-tab="compressor">HTML/JS/CSS压缩</a>
+    </div>
+    <div class="ui black big launch right attached fixed button">
+        <i class="content icon"></i>
+        <span class="text">Menu</span>
+    </div>
+    <div class="pusher">
+        <div>
+            <div id="beautify" class="ui column padded tab" data-tab="beautify">
+                <div class="tab header segment">
+                    <div class="container">
+                        <div class="introduction">
+                            <h1 class="ui header"> HTML/JS/CSS美化 </h1>
+                            <p>集体的习惯，其力量更大于个人的习惯。因此如果有一个有良好道德风气的社会环境，是最有利于培训好的社会公民的。——培根</p>
+                        </div>
+                        <div class="tabular ui menu">
+                            <a class="item active" data-val="js">Javascript</a>
+                            <a class="item" data-val="html">HTML</a>
+                            <a class="item" data-val="css">CSS</a>
+                        </div>
+                        <!-- <div class="fluid vertical ui menu">
+                            <a class="item active" data-val="js">Javascript</a>
+                            <a class="item" data-val="html">HTML</a>
+                            <a class="item" data-val="css">CSS</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="main container">
+                    <div class="ui form">
+                        <div class="field">
+                            <label>要美化的代码</label>
+                            <textarea id="beautify_input"></textarea>
+                        </div>
+                        <div class="ui horizontal divider"> (●'◡'●)ﾉ♥ </div>
+                        <div id="beautify_btn" class="ui right labeled icon button"><i class="right heart icon"></i>美化</div>
+                    </div>
+                </div>
+            </div>
+            <div id="compressor" class="ui column padded tab active" data-tab="compressor">
+                <div class="tab header segment">
+                    <div class="container">
+                        <div class="introduction">
+                            <h1 class="ui header"> HTML/JS/CSS压缩 </h1>
+                            <p>乾以易知，坤以简能；易则易知，简则易从；易知则有亲，易从则有功；有亲则可久，有功则可大；可久则贤人之德，可大则贤人之业。易简而天下之理得矣。天下之理得，而成位乎其中矣。——《周易·系辞》</p>
+                        </div>
+                        <div class="tabular ui menu">
+                            <a class="item active" data-val="js">Javascript</a>
+                            <a class="item" data-val="html">HTML</a>
+                            <a class="item" data-val="css">CSS</a>
+                        </div>
+                        <!-- <div class="fluid vertical ui menu">
+                            <a class="item active" data-val="js">Javascript</a>
+                            <a class="item" data-val="html">HTML</a>
+                            <a class="item" data-val="css">CSS</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="main container">
+                    <div class="ui form">
+                        <div class="field">
+                            <label>要压缩的代码</label>
+                            <textarea id="compressor_input"></textarea>
+                        </div>
+                        <div id="result" class="ui horizontal divider"> ( ◉ืൠ◉ื) </div>
+                        <div id="compressor_btn" class="ui right labeled icon button"><i class="right heart icon"></i>压缩</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./static/jquery.js"></script>
+    <script src="./static/jquery.address.js"></script>
+    <script src="./static/semantic.js"></script>
+    <script src="./static/jsbeautify.js"></script>
+    <script src="./static/index.js"></script>
+</body>
+
+</html>

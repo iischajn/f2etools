@@ -1,0 +1,4 @@
+[21-May-2015 10:17:36 UTC] PHP Warning:  chmod(): No such file or directory in /home/chenjian/www/compressor/compress.php on line 65
+[21-May-2015 10:17:36 UTC] PHP Warning:  file_get_contents(/home/chenjian/www/compressor/data/1_431.js): failed to open stream: No such file or directory in /home/chenjian/www/compressor/compress.php on line 66
+[21-May-2015 10:18:20 UTC] PHP Warning:  chmod(): No such file or directory in /home/chenjian/www/compressor/compress.php on line 65
+[21-May-2015 10:18:20 UTC] PHP Warning:  file_get_contents(/home/chenjian/www/compressor/data/1_645.js): failed to open stream: No such file or directory in /home/chenjian/www/compressor/compress.php on line 66
