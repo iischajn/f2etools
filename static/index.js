@@ -21,7 +21,7 @@ $(document).ready(function() {
 	        source.val(result);
 	        return;
 	    }
-	    $.post('beautify/beautify.php', {type:cate, source:val}, function(result){
+	    $.post('fl/beautify.php', {type:cate, source:val}, function(result){
 	    	source.val(result);
 	    });
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
     	if (!val) {
             return $('#compressor_input').focus();
         }
-	    $.post('compressor/compress.php', {type:cate, source:val}, function(result){
+	    $.post('fl/compress.php', {type:cate, source:val}, function(result){
 	    	source.val(result);
 	    	$('#result').html('压缩前：'+val.length+ '&nbsp;&nbsp;&nbsp;&nbsp;压缩后：'+result.length+'&nbsp;&nbsp;&nbsp;&nbsp;压缩率：'+
 			((val.length-result.length)*100/val.length).toFixed(2)+'%');
