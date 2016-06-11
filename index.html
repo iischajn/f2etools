@@ -15,7 +15,9 @@
 <body id="main">
     <div id="sidebar" class="ui large inverted vertical sidebar menu">
         <a class="item" data-tab="beautify"> HTML/JS/CSS美化</a>
-        <a class="item active" data-tab="compressor">HTML/JS/CSS压缩</a>
+        <a class="item" data-tab="compressor">HTML/JS/CSS压缩</a>
+        <a class="item" data-tab="track">画地图</a>
+        <a class="item active" data-tab="wordcount">常见单词统计</a>
     </div>
     <div class="ui black big launch right attached fixed button">
         <i class="content icon"></i>
@@ -35,11 +37,6 @@
                             <a class="item" data-val="html">HTML</a>
                             <a class="item" data-val="css">CSS</a>
                         </div>
-                        <!-- <div class="fluid vertical ui menu">
-                            <a class="item active" data-val="js">Javascript</a>
-                            <a class="item" data-val="html">HTML</a>
-                            <a class="item" data-val="css">CSS</a>
-                        </div> -->
                     </div>
                 </div>
                 <div class="main container">
@@ -53,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div id="compressor" class="ui column padded tab active" data-tab="compressor">
+            <div id="compressor" class="ui column padded tab" data-tab="compressor">
                 <div class="tab header segment">
                     <div class="container">
                         <div class="introduction">
@@ -65,11 +62,6 @@
                             <a class="item" data-val="html">HTML</a>
                             <a class="item" data-val="css">CSS</a>
                         </div>
-                        <!-- <div class="fluid vertical ui menu">
-                            <a class="item active" data-val="js">Javascript</a>
-                            <a class="item" data-val="html">HTML</a>
-                            <a class="item" data-val="css">CSS</a>
-                        </div> -->
                     </div>
                 </div>
                 <div class="main container">
@@ -78,8 +70,53 @@
                             <label>要压缩的代码</label>
                             <textarea id="compressor_input"></textarea>
                         </div>
-                        <div id="result" class="ui horizontal divider"> ( ◉ืൠ◉ื) </div>
+                        <div class="ui horizontal divider"> ( ◉ืൠ◉ื) </div>
                         <div id="compressor_btn" class="ui right labeled icon button"><i class="right heart icon"></i>压缩</div>
+                    </div>
+                </div>
+            </div>
+            <div id="track" class="ui column padded tab" data-tab="track">
+                <div class="tab header segment">
+                    <div class="container">
+                        <div class="introduction">
+                            <h1 class="ui header"> 画地图轨迹 </h1>
+                            <p>飞龙在天。——《周易·系辞》</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main container">
+                    <div class="ui form">
+                        <div>
+                            <img src="static/img/map.png" />
+                        </div>
+                        <div class="ui horizontal divider"> ( ◉ืൠ◉ื) </div>
+                        <div id="compressor_btn" class="ui right labeled icon button"><i class="right heart icon"></i>压缩</div>
+                    </div>
+                </div>
+            </div>
+            <div id="wordcount" class="ui column padded tab active" data-tab="wordcount">
+                <div class="tab header segment">
+                    <div class="container">
+                        <div class="introduction">
+                            <h1 class="ui header"> 常见单词统计 </h1>
+                            <p>亢龙有悔。——《周易·系辞》</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main container">
+                    <div class="ui form">
+                        <div class="field">
+                            <label>要解析的文章</label>
+                            <textarea id="wordcount_input"></textarea>
+                        </div>
+                        <div class="ui horizontal divider"> ( ◉ืൠ◉ื) </div>
+                        <div id="wordcount_btn" class="ui right labeled icon button"><i class="right heart icon"></i>解析</div>
+                        <div id="wordcount_save_btn" class="ui right labeled icon button"><i class="right heart icon"></i>提交解析</div>
+                    </div>
+                    <div class="ui horizontal divider"> O(∩_∩)O </div>
+                    <div class="ui form">
+                        <div id="wordcount_parse" class="field">
+                        </div>
                     </div>
                 </div>
             </div>
